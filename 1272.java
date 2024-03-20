@@ -21,10 +21,7 @@ public class Main {
                 seq = count;
             }
             
-            if(i == k){
-                sum += seq;
-            }
-            if(i == h){
+            if(i == k || i == h){
                 sum += seq;
             }
         }
