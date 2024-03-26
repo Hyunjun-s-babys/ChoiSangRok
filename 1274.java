@@ -9,9 +9,8 @@ public class Main {
         for(int i = 2; i <= a; i++){
             if(i == a){
                 System.out.println("prime");
-                break;
             }
-            if(a % i == 0){
+            else if(a % i == 0){
                 System.out.println("not prime");
                 break;
             }
