@@ -6,18 +6,15 @@ public class Main {
 
         int a = sc.nextInt();
 
-        for(int i = 2; i < a; i++){
+        for(int i = 2; i <= a; i++){
+            if(i == a){
+                System.out.println("prime");
+                break;
+            }
             if(a % i == 0){
                 System.out.println("not prime");
                 break;
             }
-            if(i == a - 1){
-                System.out.println("prime");
-            }
-        }
-
-        if(a == 2){
-            System.out.println("prime");
         }
     }
 }
