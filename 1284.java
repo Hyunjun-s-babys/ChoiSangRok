@@ -10,15 +10,12 @@ public class Main {
 
         for(int i = 2; i < n; i++){
             if(n % i == 0){
-                if(i == 2){
-                    arr.add(2);
-                }
-                for(int j = 2; j < i; j++){
-                    if(i % j == 0){
-                        break;
-                    }
-                    if(j == i - 1){
+                for(int j = 2; j <= i; j++){
+                    if(j == i){
                         arr.add(i);
+                    }
+                    else if(i % j == 0){
+                        break;
                     }
                 }
             }
